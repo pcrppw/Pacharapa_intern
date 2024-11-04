@@ -1,0 +1,63 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 40px; /* เพิ่ม padding เพื่อขยายขนาด */
+  border-radius: 8px;
+  position: relative;
+  width: 90%; /* ขยายขนาดให้ใหญ่ขึ้น */
+  max-width: 800px; /* เพิ่ม max-width เพื่อขยายความกว้าง */
+  text-align: left;
+}
+
+.modal-close {
+  color: red;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: bold; /* ปรับให้เป็นตัวหนา */
+}
+
+.job-card {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.05);
+}
+
+.Job-description {
+  white-space: pre-line;
+  padding-bottom: 16px; /* เพิ่ม padding ระหว่างกลุ่ม */
+}
+
+.salary-info h3,
+.salary-info p {
+  display: inline; /* หรือใช้ inline-block ก็ได้ */
+  margin-right: 4px; /* เพิ่มระยะห่างระหว่าง <h3> กับ <p> */
+}
+
+.apply-link {
+  text-align: center;
+  margin-top: 30px; /* เพิ่มระยะห่างระหว่าง Job-description กับปุ่ม Apply Now */
+}
+
+h3 {
+  margin-top: 10px; /* เว้นระยะด้านล่าง <h3> */
+}

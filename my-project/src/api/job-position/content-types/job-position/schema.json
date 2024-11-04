@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_positions",
+  "info": {
+    "singularName": "job-position",
+    "pluralName": "job-positions",
+    "displayName": "๋job_position",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Job_title": {
+      "type": "enumeration",
+      "enum": [
+        "Business Analyst",
+        "Full Stack Developer",
+        "Marketing",
+        "Software Tester",
+        "Content Creator",
+        "Sales",
+        "Project manager",
+        "Accountant"
+      ],
+      "required": true
+    },
+    "Job_description": {
+      "type": "richtext"
+    },
+    "Qualifications": {
+      "type": "richtext",
+      "required": true
+    },
+    "Benefits": {
+      "type": "richtext",
+      "required": true
+    },
+    "Salary": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

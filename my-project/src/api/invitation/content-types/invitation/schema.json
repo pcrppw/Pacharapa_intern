@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "invitations",
+  "info": {
+    "singularName": "invitation",
+    "pluralName": "invitations",
+    "displayName": "invitation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jobInvitation": {
+      "type": "richtext"
+    }
+  }
+}
